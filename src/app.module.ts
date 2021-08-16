@@ -10,7 +10,9 @@ import AppService from './app.service';
         cors: true,
       },
       gateway: {
-        serviceList: [],
+        serviceList: [
+          { name: 'samples', url: 'http://localhost:3001/graphql' },
+        ],
       },
     }),
   ],
